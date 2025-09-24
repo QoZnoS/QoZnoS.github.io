@@ -1,1 +1,168 @@
-{"error_code":31023,"error_msg":"param error == invalid file type=other"}
+:root {
+  --text1: #121826;
+  --text2: #3C3E42;
+  --text3: #848484;
+  --text4: #C3C3C5;
+  --text-green: #16C2A3;
+  --padding15: .4rem;
+}
+
+body {
+  padding-top: 1.1733rem;
+}
+
+/* nav bar盒子制作 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 1.1733rem;
+  text-align: center;
+  line-height: 1.1733rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  /* margin-top: 1.1733rem; */
+  /* background-color: pink; */
+}
+
+.nav-bar .back {
+  padding-left: var(--padding15);
+  color: #000;
+}
+
+.back i {
+  font-size: 18px;
+}
+
+.nav-bar .register {
+  padding-right: var(--padding15);
+  font-size: .4533rem;
+  color: var(--text-green);
+}
+
+/* 登录头部模块 */
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: .6667rem var(--padding15) 1.2rem;
+}
+
+.login-header h1 {
+  font-size: .64rem;
+  font-weight: 500;
+  color: var(--text1);
+}
+
+.login-header a {
+  font-size: .4rem;
+  color: var(--text2);
+}
+
+.login-header a i {
+  font-size: .5067rem;
+}
+
+.login-form {
+  padding: 0 var(--padding15);
+}
+
+.login-form .row {
+  position: relative;
+  padding: var(--padding15) 0;
+  border-bottom: 1px solid #EDEDEDE5;
+}
+
+.login-form .row input {
+  font-size: .3733rem;
+}
+
+.login-form .row input::placeholder {
+  color: var(--text4);
+}
+
+.login-form .row img {
+  position: absolute;
+  top: .48rem;
+  right: var(--padding15);
+  width: var(--padding15);
+  height: var(--padding15);
+}
+
+.login-form .agree {
+  border-bottom: 0;
+  font-size: .3467rem;
+  color: var(--text2);
+}
+
+.login-form .agree i {
+  font-size: var(--padding15);
+  color: var(--text4);
+}
+
+.login-form .agree a {
+  color: var(--text-green);
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  height: 1.1733rem;
+  border-radius: .5867rem;
+  background-color: #FAFAFA;
+  text-align: center;
+  line-height: 1.1733rem;
+  font-size: .4267rem;
+  color: #D9DBDE;
+}
+
+.forget {
+  padding-top: .4rem;
+  text-align: center;
+}
+
+.forget a {
+  font-size: .3733rem;
+  color: var(--text3);
+}
+
+.third-login {
+  width: 5.3333rem;
+  margin: 5.3333rem auto 1.8667rem;
+  text-align: center;
+  /* background-color: pink; */
+}
+
+.third-login p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: .32rem;
+  font-size: .32rem;
+  color: var(--text4);
+}
+
+.third-login p::before,
+.third-login p::after {
+  content: '';
+  flex: 1;
+  height: .0267rem;
+  background-color: var(--text4);
+}
+
+.third-login p span {
+  width: 2.4rem;
+}
+
+.third-login a {
+  display: inline-block;
+  margin-top: .4rem;
+}
+
+.third-login a img {
+  width: .8rem;
+  height: .8rem;
+}
